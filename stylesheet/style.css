@@ -3,14 +3,63 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     margin-bottom: 1000px;
+    margin: 40px;
+
+}
+
+
+h1{
+    font-size: 100px;
 }
 
 h1,h2,h3{
     font-weight: 550;
-    color: firebrick;
+    color: #1C66C8;
 }
 
 h1,.center_text{
     text-align: center;
 }
 
+#logo{
+    width: 15%;
+    height: auto;
+}
+
+.orange_color{
+    color: #ED892A;
+}
+
+.icon-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon-button img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-button p {
+    margin: 0;
+    font-size: 14px;
+    color: #1C66C8;
+  }
