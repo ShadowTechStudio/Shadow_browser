@@ -5,20 +5,40 @@
     <head> <!--donnent des informations au navigateur : l’encodage et le titre de la page.-->
         <meta charset="utf-8"> <!--indique l'encodage utilisé dans le fichier  .html : cela détermine comment les caractères spéciaux s'affichent (accents, idéogrammes chinois et japonais, etc.).-->
         <title>Shadow Web Navigator</title> <!--indique au navigateur le titre de la page web-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <link href="stylesheet/style.css" rel="stylesheet">
+
+
     </head>
 
     <body> <!--contient tout ce qui sera affiché à l'écran sur la page web.-->
-        <h1> Bienvenue sur le navigateur Shadow Web Browser</h1>
-
+        <h1 id="haut_page"> Bienvenue sur le navigateur Shadow Web Browser</h1>
         
-        
-        <p>Shadow Browser est un navigateur développer pour un projet professionnel</p>
+        <p class="center_text">Shadow Browser est un navigateur développer pour un projet professionnel</p>
 
+
+        <h2><a href="#meteo"> Météo</a></h2>
+        <h2><a href="#actualite"> Actualité</a></h2>
+        <h2><a href="#shopping"> Shopping</a></h2>
+        <h2><a href="#sport"> Sport</a></h2>
+        <h2><a href="#ai"> AI</a></h2>
+        <h2><a href="#film"> Films / Séries / Streaming</a></h2>
+        <h2><a href="#jeux"> Jeux Vidéo</a></h2>
+        <h2><a href="#finance"> Finance</a></h2>
+        <h2><a href="#transports"> Transports</a></h2>
+        <h2><a href="#voyage"> Voyage</a></h2>
+        <h2><a href="#formation"> Formation / Cours en ligne</a></h2>
+        <h2><a href="#cuisine"> Cuisine</a></h2>
+        <h2><a href="#maison"> Maison / Jardin / Bricolage</a></h2>
+        <h2><a href="#sante"> Santé</a></h2>
         <h2><a href="#gouvernement"> Gouvernement</a></h2>
+  
 
-        <p>Méteo:</p>
-
-        <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/O9712901##3D6AA2" title="Prévisions Sainte-Rose par Météo-France"> </iframe>
+        <h2 id="meteo">Météo:</h2>
         <ul>
             <li><a href="https://meteofrance.com/">Météo France </a></li>
             <li><a href="https://www.windy.com/">Windy </a></li>
@@ -27,7 +47,7 @@
             <li><a href="https://www.tameteo.com">Tameteo </a></li>  
         </ul>
 
-        <p>Actualité :</p>
+        <h2 id="actualite">Actualité :</h2>
         <ul>
             <li><a href="https://www.lemonde.fr">Le Monde</a></li>
             <li><a href="https://www.lefigaro.fr">Le Figaro</a></li>
@@ -36,7 +56,7 @@
             <li><a href="https://www.francetvinfo.fr">Franceinfo</a></li>
         </ul>
 
-        <p>Shopping :</p>
+        <h2 id="shopping">Shopping :</h2>
         <ul>
             <li><a href="https://www.amazon.fr">Amazon</a></li>
             <li><a href="https://www.cdiscount.com">Cdiscount</a></li>
@@ -45,7 +65,7 @@
             <li><a href="https://www.vinted.fr">Vinted</a></li>
         </ul>
 
-        <p>Sport :</p>
+        <h2 id="sport">Sport :</h2>
         <ul>
             <li><a href="https://www.lequipe.fr">L'Équipe</a></li>
             <li><a href="https://www.eurosport.fr">Eurosport</a></li>
@@ -53,9 +73,18 @@
             <li><a href="https://www.sport.fr">Sport.fr</a></li>
             <li><a href="https://www.sport365.fr">Sport 365</a></li>
         </ul>
+
+        <h2 id="ai">AI</h2>
+        <ul>
+            <li><a href="https://chatgpt.com">ChatGPT</a></li>
+            <li><a href="https://copilot.microsoft.com">Copilot</a></li>
+            <li><a href="https://gemini.google.com">Gemini</a></li>
+            <li><a href="https://chat.mistral.ai/chat">Mistral</a></li>
+            <li><a href="https://chat.deepseek.com">Deepseek</a></li>
+        </ul>
         
 
-        <p>Films / Séries / Streaming :</p>
+        <h2 id="film">Films / Séries / Streaming :</h2>
         <ul>
             <li><a href="https://www.youtube.com/">Youtube</a></li>
             <li><a href="https://www.tiktok.com/">TikTok </a></li>
@@ -67,7 +96,7 @@
 
         </ul>
 
-        <p>Jeux Vidéo :</p>
+        <h2 id="jeux">Jeux Vidéo :</h2>
         <ul>
             <li><a href="https://www.jeuxvideo.com">Jeuxvideo.com</a></li>
             <li><a href="https://store.steampowered.com">Steam</a></li>
@@ -79,14 +108,14 @@
 
         </ul>
 
-        <p>Finance / Bourse :</p>
+        <h2 id="finance">Finance :</h2>
         <ul>
             <li><a href="https://www.boursorama.com">Boursorama</a></li>
             <li><a href="https://fr.finance.yahoo.com">Yahoo Finance</a></li>
             <li><a href="https://www.tradingview.com">TradingView</a></li>
         </ul>
 
-        <p>Transports / Cartes :</p>
+        <h2 id="transports">Transports :</h2>
         <ul>
             <li><a href="https://www.google.com/maps">Google Maps</a></li>
             <li><a href="https://www.waze.com">Waze</a></li>
@@ -99,7 +128,7 @@
             
         </ul>
 
-        <p>Voyage :</p>
+        <h2 id="voyage">Voyage :</h2>
         <ul>
             <li><a href="https://wwws.airfrance.fr">Air France</a></li>
             <li><a href="https://www.sncf-connect.com">SNCF Connect</a></li>
@@ -113,28 +142,28 @@
             
         </ul>
 
-        <p>Formation / Cours en ligne :</p>
+        <h2 id="formation">Formation / Cours en ligne :</h2>
         <ul>
             <li><a href="https://openclassrooms.com/fr/">OpenClassrooms</a></li>
             <li><a href="https://www.coursera.org">Coursera</a></li>
             <li><a href="https://www.udemy.com">Udemy</a></li>
         </ul>
 
-        <p>Cuisine / Recettes :</p>
+        <h2 id="cuisine">Cuisine :</h2>
         <ul>
             <li><a href="https://www.marmiton.org">Marmiton</a></li>
             <li><a href="https://www.750g.com">750g</a></li>
             <li><a href="https://www.cuisineaz.com">CuisineAZ</a></li>
         </ul>
 
-        <p>Maison / Jardin / Bricolage :</p>
+        <h2 id="maison">Maison / Jardin / Bricolage :</h2>
         <ul>
             <li><a href="https://www.leroymerlin.fr">Leroy Merlin</a></li>
             <li><a href="https://www.castorama.fr">Castorama</a></li>
             <li><a href="https://www.ikea.com/fr/fr/">IKEA</a></li>
         </ul>
 
-        <p>Santé / Bien-être :</p>
+        <h2 id="sante">Santé :</h2>
         <ul>
             <li><a href="https://www.sante.fr/">Sante.fr</a></li>
             <li><a href="https://www.doctissimo.fr">Doctissimo</a></li>
@@ -142,7 +171,7 @@
             <li><a href="https://www.doctissimo.fr">Doctissimo</a></li>
         </ul>
 
-        <p id="gouvernement">Gouvernement :</p>
+        <h2 id="gouvernement">Gouvernement :</h2>
         <ul>
             <li><a href="https://www.service-public.fr">Service Public</a></li>
             <li><a href="https://www.info.gouv.fr">Info </a></li>
@@ -151,7 +180,10 @@
             <li><a href="https://www.impots.gouv.fr">Impôts</a></li>
             <li><a href="https://www.ameli.fr">Ameli (Assurance Maladie)</a></li>
             <li><a href="https://www.caf.fr">Caisse d'allocations familiales (CAF)</a></li>
+            <li><a href="https://www.amendes.gouv.fr/">Amendes</a></li>
         </ul>
+
+        <h3 class="center_text"><a href="#haut_page">Retour haut de la page</a></h3>
         
     </body>
 </html>

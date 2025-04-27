@@ -1,0 +1,16 @@
+body{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 1000px;
+}
+
+h1,h2,h3{
+    font-weight: 550;
+    color: firebrick;
+}
+
+h1,.center_text{
+    text-align: center;
+}
+
