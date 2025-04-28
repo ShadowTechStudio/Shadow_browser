@@ -69,5 +69,8 @@ h1,.center_text{
     font-size: 14px;
     color: #1C66C8;
     text-align: center;
+  }
+
+  a{
     text-decoration: none;
   }
