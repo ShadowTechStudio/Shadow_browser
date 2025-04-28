@@ -22,8 +22,9 @@ h1,.center_text{
 
 /*Style du logo*/
 #logo{
-    width: 12%;
-    height: 12%;
+    width: 12em;
+    height: 12em;
+    border: 2px dotted;
 }
 
 
