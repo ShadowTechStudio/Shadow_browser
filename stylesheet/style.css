@@ -3,6 +3,7 @@ body{ /* Style sur le corps du contenu*/
     font-optical-sizing: auto;
     font-weight: 500;
     margin: 40px;
+    text-decoration: none;
 }
 
 
@@ -67,4 +68,6 @@ h1,.center_text{
     margin: 0;
     font-size: 14px;
     color: #1C66C8;
+    text-align: center;
+    text-decoration: none;
   }
