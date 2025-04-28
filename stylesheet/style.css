@@ -1,10 +1,8 @@
-body{
+body{ /* Style sur le corps du contenu*/
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    margin-bottom: 1000px;
     margin: 40px;
-
 }
 
 
@@ -17,14 +15,17 @@ h1,h2,h3{
     color: #1C66C8;
 }
 
+/*Centrage au centre du body*/
 h1,.center_text{
     text-align: center;
 }
 
+/*Style du logo*/
 #logo{
-    width: 15%;
-    height: auto;
+    width: 12%;
+    height: 12%;
 }
+
 
 .orange_color{
     color: #ED892A;
@@ -38,6 +39,7 @@ h1,.center_text{
     flex-wrap: wrap;
   }
   
+  /*grille qui contients les boutons*/
   .icon-button {
     display: flex;
     flex-direction: column;
@@ -48,16 +50,19 @@ h1,.center_text{
     cursor: pointer;
   }
   
+  /*style à appliquer quand la souris passe au dessus d'un bouton*/
   .icon-button:hover {
     background-color: #f0f0f0;
   }
   
+  /*style de l'image du bouton*/
   .icon-button img {
     width: 70px;
     height: 70px;
     margin-bottom: 10px;
   }
   
+  /*Style du texte en dessous de l'icone du bouton*/
   .icon-button p {
     margin: 0;
     font-size: 14px;
