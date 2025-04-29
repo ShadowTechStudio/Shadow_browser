@@ -5,25 +5,46 @@
     <head> <!--donnent des informations au navigateur : l’encodage et le titre de la page.-->
         <meta charset="utf-8"> <!--indique l'encodage utilisé dans le fichier  .html : cela détermine comment les caractères spéciaux s'affichent (accents, idéogrammes chinois et japonais, etc.).-->
         <title>Shadow Web Navigator</title> <!--indique au navigateur le titre de la page web-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <link href="stylesheet/style.css" rel="stylesheet">
+        <link rel="icon" href="images/logo.svg" type="image/svg">
+
+
+        <!--<base href="/Shadow_browser/"> -->
+
     </head>
 
     <body> <!--contient tout ce qui sera affiché à l'écran sur la page web.-->
 
-        <h2><a href="#meteo"> Météo</a></h2>
-        <h2><a href="#actualite"> Actualité</a></h2>
-        <h2><a href="#shopping"> Shopping</a></h2>
-        <h2><a href="#sport"> Sport</a></h2>
-        <h2><a href="#ai"> AI</a></h2>
-        <h2><a href="#film"> Video</a></h2>
-        <h2><a href="#jeux"> Jeux Vidéo</a></h2>
-        <h2><a href="#finance"> Finance</a></h2>
-        <h2><a href="#transports"> Transports</a></h2>
-        <h2><a href="#voyage"> Voyage</a></h2>
-        <h2><a href="#formation"> Formation</a></h2>
-        <h2><a href="#cuisine"> Cuisine</a></h2>
-        <h2><a href="#maison"> Maison</a></h2>
-        <h2><a href="#sante"> Santé</a></h2>
-        <h2><a href="#gouvernement"> Gouvernement</a></h2>
+        <header>
+            <img id="logo" src="images/logo.svg" alt="logo" />
+            <h1 id="banniere">Shadow Web Browser</h1>
+        </header>
+
+        <nav> 
+            <ul class="icon-bar">
+                <li><a href="#meteo">Météo</a></li>
+                <li><a href="#actualite">Actualité</a></li>
+                <li><a href="#shopping">Shopping</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#ai">AI</a></li>
+                <li><a href="#film">Vidéo</a></li>
+                <li><a href="#jeux">Jeux Vidéo</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#transports">Transports</a></li>
+                <li><a href="#voyage">Voyage</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#cuisine">Cuisine</a></li>
+                <li><a href="#maison">Maison</a></li>
+                <li><a href="#sante">Santé</a></li>
+                <li><a href="#gouvernement">Gouvernement</a></li>
+            </ul>
+        </nav>
+        
   
 
         <h2 id="meteo">Météo:</h2>

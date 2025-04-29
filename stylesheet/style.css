@@ -2,12 +2,29 @@ body{ /* Style sur le corps du contenu*/
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    margin: 40px;
     text-decoration: none;
 }
 
+#banniere{
+  color: #ED892A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+#logo{
+  display: flex;
+  align-items: flex-start; /* Aligne le contenu en haut */
+  justify-content: flex-start; /* Aligne le contenu à gauche */
+  padding: 10px; /* Espace autour du contenu */
+  height: 5em;
+}
+
+
 h1{
-    font-size: 100px;
+    font-size: 90px;
 }
 
 h1,h2,h3{
@@ -19,14 +36,6 @@ h1,h2,h3{
 h1,.center_text{
     text-align: center;
 }
-
-/*Style du logo*/
-#logo{
-    width: 12em;
-    height: 12em;
-    border: none;
-}
-
 
 .orange_color{
     color: #ED892A;
@@ -53,7 +62,7 @@ h1,.center_text{
   
   /*style à appliquer quand la souris passe au dessus d'un bouton*/
   .icon-button:hover {
-    background-color: #f0f0f0;
+    background-color: #FFE4CB;
   }
   
   /*style de l'image du bouton*/
@@ -74,3 +83,18 @@ h1,.center_text{
   a{
     text-decoration: none;
   }
+
+  footer{
+    color: #ED892A;
+    font-weight: 350px;
+    margin-top: 90px;
+    text-align: center;
+  }
+
+#search_bar{
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;
+  height: 100px;
+
+}
