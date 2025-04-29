@@ -92,9 +92,11 @@ h1,.center_text{
   }
 
 #search_bar{
+  font-weight: 100px;
   display: flex;
   justify-content: center; /* centre horizontalement */
   align-items: center;
   height: 100px;
+  width: 40px ;
 
 }
