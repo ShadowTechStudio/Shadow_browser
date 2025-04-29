@@ -95,6 +95,5 @@ h1,.center_text{
   display: flex;
   justify-content: center; /* centre horizontalement */
   align-items: center;
-  height: 400px;
 }
 
