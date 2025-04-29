@@ -14,13 +14,25 @@ body{ /* Style sur le corps du contenu*/
 
 }
 
-#logo{
-  display: flex;
-  align-items: flex-start; /* Aligne le contenu en haut */
-  justify-content: flex-start; /* Aligne le contenu à gauche */
-  padding: 10px; /* Espace autour du contenu */
-  height: 5em;
+
+header {
+  display: flex;                         /* active Flexbox sur le header */ :contentReference[oaicite:0]{index=0}  
+  justify-content: space-between;      /* espace les deux enfants aux extrémités */ :contentReference[oaicite:1]{index=1}  
+  align-items: center;                  /* aligne verticalement items et logo */ :contentReference[oaicite:2]{index=2}  
+  padding: 10px;                        /* espace interne facultatif */  
+ 
 }
+
+/* Si besoin, ajuste la taille des images */
+#logo img{
+  width: 8em;
+  height: auto;
+}
+#widget img {
+  width: 3em;   /* ou toute autre taille souhaitée */
+  height: auto;  /* conserve le ratio de l'image */
+}
+
 
 
 h1{
