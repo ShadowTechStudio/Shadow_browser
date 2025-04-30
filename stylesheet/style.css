@@ -16,9 +16,9 @@ body{ /* Style sur le corps du contenu*/
 
 
 header {
-  display: flex;                         /* active Flexbox sur le header */ :contentReference[oaicite:0]{index=0}  
-  justify-content: space-between;      /* espace les deux enfants aux extrémités */ :contentReference[oaicite:1]{index=1}  
-  align-items: center;                  /* aligne verticalement items et logo */ :contentReference[oaicite:2]{index=2}  
+  display: flex;                         /* active Flexbox sur le header */ 
+  justify-content: space-between;      /* espace les deux enfants aux extrémités */  
+  align-items: center;                  /* aligne verticalement items et logo */  
   padding: 10px;                        /* espace interne facultatif */  
  
 }
@@ -31,8 +31,8 @@ header {
 #widget img {
   width: 3em;   /* ou toute autre taille souhaitée */
   height: auto;  /* conserve le ratio de l'image */
-}
 
+}
 
 
 h1{
@@ -51,6 +51,10 @@ h1,.center_text{
 
 .orange_color{
     color: #ED892A;
+}
+
+.blue_color{
+  color: #1C66C8;
 }
 
 .icon-bar {
@@ -96,11 +100,44 @@ h1,.center_text{
     text-decoration: none;
   }
 
-  footer{
+  .footer_top{
+    display: flex;
+    align-items: center;
+    margin-top: 325px;
+    margin-bottom: 5px;
+  }
+
+  .footer_logo{
+  height: 50px;       /* Ajuste la taille de ton logo */
+
+  }
+
+  .footer-top hr {
+    flex: 1;                        /* Prend tout l'espace restant */
+    border: none;
+    border-top: 5px solid;     /* Ligne grise fine */
+    margin: 10px;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 0;   
+    list-style-type: none;   
+  }
+
+  footer a{
+
+    color: #1C66C8;
+    font-weight: 200px;
+
+  }
+
+  footer a:hover{
     color: #ED892A;
-    font-weight: 350px;
-    margin-top: 300px;
-    text-align: center;
   }
 
 #search_bar{
