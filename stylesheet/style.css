@@ -29,12 +29,20 @@ header {
   height: auto;
 }
 #widget img {
-  width: 3em;   /* ou toute autre taille souhaitée */
+  width: 4em;   /* ou toute autre taille souhaitée */
   height: auto;  /* conserve le ratio de l'image */
+  display: block; /* pour éviter un petit espace sous l'image */
+  margin: 0 auto; /* facultatif avec text-align, mais utile si display block */
 
 }
 
-
+.widget-text {
+  font-size: 0.9em;  /* ajuste la taille du texte */
+  color: #1C66C8;       /* couleur du texte */
+  margin-top: 5px;   /* espace entre image et texte */
+  text-decoration: none;
+  text-align: center;
+}
 
 h1{
     font-size: 90px;
@@ -50,12 +58,32 @@ h1,.center_text{
     text-align: center;
 }
 
+h2{
+  text-align: center;
+}
 .orange_color{
     color: #ED892A;
 }
 
 .blue_color{
   color: #1C66C8;
+}
+
+form{
+display: flex;
+justify-content: center;
+width: auto;
+}
+
+fieldset{
+  border-radius: 20px;
+}
+
+textarea{
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C66C8;  
 }
 
 .container_widget {
@@ -132,7 +160,7 @@ h1,.center_text{
   .footer_top{
     display: flex;
     align-items: center;
-    margin-top: 325px;
+    margin-top: 300px;
     margin-bottom: 5px;
   }
 
@@ -154,8 +182,9 @@ h1,.center_text{
     justify-content: space-around;
     width: 50%;
     margin: auto;
-    padding: 0;   
-    list-style-type: none;   
+    padding: 0; 
+    padding-bottom: 15px; 
+    list-style-type: none;  
   }
 
   footer a{
@@ -174,4 +203,39 @@ h1,.center_text{
   justify-content: center; /* centre horizontalement */
   align-items: center;
 }
+
+/* Mobile : petits écrans (jusqu'à 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo img, #widget img {
+    width: 6em;
+  }
+
+  .container_widget {
+    grid-template-columns: 1fr; /* 1 colonne en mobile */
+  }
+}
+
+/* Tablette : écrans moyens (entre 601px et 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container_widget {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+  }
+}
+
+/* Grand écran : desktop (plus de 1024px) */
+@media screen and (min-width: 1025px) {
+  .container_widget {
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes comme prévu sur grand écran */
+  }
+}
+
 
