@@ -51,11 +51,15 @@ header {
 
 h1{
     font-size: 90px;
+    
 }
 
 h1,h2,h3{
     font-weight: 550;
     color: #1C66C8;
+    text-shadow: #919191 3px 2px 5px;
+
+
 }
 
 /*Centrage au centre du body*/
